@@ -28,7 +28,7 @@
 
             <article class="card text-center">
 
-                <div class="card-header fs-4 text-primary bg-white">
+                <div class="card-header fs-4 bg-white">
                     Iniciar sesión
                 </div>
 

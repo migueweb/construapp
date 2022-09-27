@@ -15,11 +15,11 @@
 
 </head>
 
-<body>
+<body class="bg-light">
     <!-- Start navbar -->
-    <nav class="navbar navbar-expand-lg shadow-sm ">
+    <nav class="navbar navbar-expand-lg shadow-sm bg-white">
         <div class="container">
-            <a class="navbar-brand fs-3" href="./"> <i class="bi bi-house-fill"></i>ConstruApp</a>
+            <a class="navbar-brand fs-3" href="./"> <i class="bi bi-house"></i> ConstruApp</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

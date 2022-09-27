@@ -7,7 +7,7 @@ if(isset($_GET['msg']) && $_GET['msg'] == 'destroy'){
 ?>
 
     <!-- Start main content-->
-    <div class="container mt-4">
+    <div class="container mt-4 bg-white p-5">
         <h1>Bienvenido a Contruapp</h1>
         <h4 class="text-secondary"> La contructora #1 en el pais</h4>
 
