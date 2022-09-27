@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,7 +17,7 @@
 
 <body>
     <!-- Start navbar -->
-    <nav class="navbar navbar-expand-lg shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm ">
         <div class="container">
             <a class="navbar-brand fs-3" href="./"> <i class="bi bi-house-fill"></i>ConstruApp</a>
 
@@ -24,16 +26,37 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse w-100" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link fs-5" href="#">Inicio</a>
-                    <a class="nav-link fs-5" href="#">Cotizar</a>     
-                    <a class="nav-link fs-5" href="./login.php">Iniciar sesión</a>
-                    <a class="nav-link fs-5" href="./register.php">Registrarse</a>
-
+                    <a class="nav-link fs-5" href="./">Inicio</a>
+                    <a class="nav-link fs-5" href="#">Cotizar</a>
+                    
+                    <?php if(!isset($_SESSION['login']) || $_SESSION['login'] != true  ){?>
+                        <a class="nav-link fs-5" href="./login.php">Iniciar sesión</a>
+                        <a class="nav-link fs-5" href="./register.php">Registrarse</a>
+                    <?php }?>
                 </div>
             </div>
 
+            <?php if(isset($_SESSION['login']) && $_SESSION['login'] == true){ ?>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                    <a class="nav-link fs-5 text-black">
+                        <i class="bi bi-person"></i>
+                        <?php echo $_SESSION['name'], ' ',$_SESSION['lastname'] ; ?>
+                    </a>
+
+                    <a href="#" class="nav-link fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">cerrar sesión</a>
+                </div>
+            </div>
+
+            <?php }?>
+
         </div>
+
+
+
     </nav>
     <!-- End navbar -->
