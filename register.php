@@ -25,6 +25,7 @@
             </div>
             <?php }?>
 
+
             <!-- Alert Success -->
             <?php if(isset($_GET['msg']) && $_GET['msg'] == 'success'){?>
 
@@ -34,17 +35,18 @@
             </div>
             <?php }?>
 
+
             <!-- End Alerts-->
 
             <!-- Start Form wrapper-->
             <article class="card text-center">
-                
+
                 <div class="card-header fs-4 text-success bg-white">
                     Registrarse
                 </div>
-                
+
                 <div class="card-body shadow">
-                    
+
                     <!-- Start Form-->
                     <form action="validate_register.php" method="POST">
                         <div class="row">
@@ -78,7 +80,8 @@
                             <input type="hidden" name="hidden" value="1">
 
                             <div class="col-12 mt-4 ">
-                                <button type="submit" class="btn btn-success w-50 py-2 fs-5 float-end">Registrarse</button>
+                                <button type="submit"
+                                    class="btn btn-success w-50 py-2 fs-5 float-end">Registrarse</button>
                             </div>
 
                         </div>

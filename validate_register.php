@@ -16,9 +16,9 @@ if(
         isset($_POST['fEmail']) && isset($_POST['fPass']) &&
         isset($_POST['hidden']) && $_POST['hidden'] == '1'
         ) {
-       
+
             $fName = $_POST['fName'];
-            $fLastname = $_POST['fLastame'];
+            $fLastname = $_POST['fLastname'];
             $fEmail = $_POST['fEmail'];
             
             // encrypting password
