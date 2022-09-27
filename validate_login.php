@@ -23,13 +23,15 @@ if(
         if(!password_verify($fPass, $password)){
             header('Location: login.php?msg=credentialsError');
         }
-        
-        session_start();
-        $_SESSION['name'] = $row['name'];
-        $_SESSION['lastname'] = $row['lastname'];
-        $_SESSION['login'] = true;
+        else {
+            session_start();
+            $_SESSION['name'] = $row['name'];
+            $_SESSION['lastname'] = $row['lastname'];
+            $_SESSION['login'] = true;
+    
+            header('Location: ./');
+        }
 
-        header('Location: ./');
 
         
     } 
