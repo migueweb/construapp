@@ -16,22 +16,24 @@
 <body>
     <!-- Start navbar -->
     <nav class="navbar navbar-expand-lg shadow-sm">
-            <div class="container">
-                <a class="navbar-brand fs-3" href="./"> <i class="bi bi-house-fill"></i>ConstruApp</a>
+        <div class="container">
+            <a class="navbar-brand fs-3" href="./"> <i class="bi bi-house-fill"></i>ConstruApp</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link fs-5" href="#">Inicio</a>
-                        <a class="nav-link fs-5" href="#">Cotizar</a>
-                    </div>
+            <div class="collapse navbar-collapse w-100" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link fs-5" href="#">Inicio</a>
+                    <a class="nav-link fs-5" href="#">Cotizar</a>     
+                    <a class="nav-link fs-5" href="./login.php">Iniciar sesión</a>
+                    <a class="nav-link fs-5" href="./register.php">Registrarse</a>
+
                 </div>
-
             </div>
+
+        </div>
     </nav>
     <!-- End navbar -->
