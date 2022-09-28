@@ -70,7 +70,7 @@
 
                     <!-- Button Help-->
                     <button type="button" class="btn btn-link p-0 m-0 float-end" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#helpModal">
                         ¿Necesito ayuda?
                     </button>
 
@@ -149,7 +149,7 @@
 <!-- End fill-->
 
 <!-- Modal Help-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
