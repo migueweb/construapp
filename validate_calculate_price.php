@@ -1,5 +1,5 @@
 <?php
-print_r($_POST);
+//print_r($_POST);
 
 if(empty($_POST['wall-1']) ||  empty($_POST['wall-2']) ){
     header('Location: ./calculate_price.php?msg=empty');
@@ -44,12 +44,8 @@ $usedSpace = $w1_obj1 + $w1_obj2 +$w1_obj3 + $w2_obj1 + $w2_obj2 + $w2_obj3;
 $spaceToRemodel = $freeSpace - $usedSpace;
 
 $finalPrice = $spaceToRemodel * 24;
-echo "<br><br>";
 
-echo "$freeSpace <br><br>";
-echo "$usedSpace <br><br>";
-echo "$spaceToRemodel <br><br>";
-echo "$finalPrice <br><br>";
+header("Location: result.php?spaceToRemodel=$spaceToRemodel&price=$finalPrice");
 
 
 
