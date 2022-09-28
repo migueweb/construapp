@@ -26,7 +26,7 @@
             </div>
             <?php }?>
 
-            <article class="card text-center">
+            <article class="card text-center mt-5">
 
                 <div class="card-header fs-4 bg-white">
                     Iniciar sesión

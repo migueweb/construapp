@@ -39,7 +39,7 @@
             <!-- End Alerts-->
 
             <!-- Start Form wrapper-->
-            <article class="card text-center">
+            <article class="card text-center mt-3">
 
                 <div class="card-header fs-4 text-success bg-white">
                     Registrarse
