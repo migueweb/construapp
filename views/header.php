@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link fs-5" href="./">Inicio</a>
-                    <a class="nav-link fs-5" href="#">Cotizar</a>
+                    <a class="nav-link fs-5" href="./calculate_price.php">Cotizar</a>
                     
                     <?php if(!isset($_SESSION['login']) || $_SESSION['login'] != true  ){?>
                         <a class="nav-link fs-5" href="./login.php">Iniciar sesión</a>
@@ -48,7 +48,7 @@
                         <?php echo $_SESSION['name'], ' ',$_SESSION['lastname'] ; ?>
                     </a>
 
-                    <a href="#" class="nav-link fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">cerrar sesión</a>
+                    <a href="#" class="nav-link fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Cerrar sesión</a>
                 </div>
             </div>
 

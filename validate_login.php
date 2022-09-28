@@ -29,7 +29,7 @@ if(
             $_SESSION['lastname'] = $row['lastname'];
             $_SESSION['login'] = true;
     
-            header('Location: ./');
+            header('Location: ./calculate_price.php');
         }
 
 

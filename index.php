@@ -30,7 +30,7 @@ if(isset($_GET['msg']) && $_GET['msg'] == 'destroy'){
         <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quam velit voluptatibus fugit enim vitae amet, voluptatem officiis libero placeat, beatae eius. Doloremque temporibus adipisci, rerum et, dolore provident ipsam quisquam vitae esse voluptate eaque harum cupiditate mollitia blanditiis voluptatem sint eligendi id. Illum, accusantium.</p>
 
         <div>
-            <a href="#" class="btn btn-lg btn-info fs-5">¿Realizar cotizacion?</a>
+            <a href="./calculate_price.php" class="btn btn-lg btn-info fs-5">¿Realizar cotizacion?</a>
             <a href="./register.php" class="btn btn-lg btn-success fs-5">Crear una cuenta</a>
         </div>
         
