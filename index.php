@@ -33,11 +33,6 @@ if(isset($_GET['msg']) && $_GET['msg'] == 'destroy'){
             <a href="./calculate_price.php" class="btn btn-lg btn-info fs-5">¿Realizar cotizacion?</a>
             <a href="./register.php" class="btn btn-lg btn-success fs-5">Crear una cuenta</a>
         </div>
-        
-
-
-        <!-- Start Fill-->
-        <div class="m-5 p-5"></div>
 
         
     </div>
