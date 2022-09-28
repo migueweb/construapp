@@ -145,7 +145,13 @@
 </main>
 
 <!--Start fill-->
-<div class="m-5 p-3"></div>
+<?php 
+if(!isset($_SESSION['login']) || $_SESSION['login'] != true) {
+ ?>
+<div class="m-5 p-5"></div>
+<div class="m-5 p-5"></div>
+<div class="m-3 p-4"></div>
+<?php }?>
 <!-- End fill-->
 
 <!-- Modal Help-->

@@ -1,5 +1,5 @@
     <!-- Start footer-->
-    <footer class="container-fluid bg-white py-4 mt-5 fixed-bottom shadow-lg">
+    <footer class="container-fluid bg-white py-4 mt-5 shadow-lg">
         <p class="text-center fs-5 mt-2">Desarrollado por <a href="https://github.com/migueweb/" target="_blank">@migueweb</a></p>
     </footer>
     <!--End footer-->
