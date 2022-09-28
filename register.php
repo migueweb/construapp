@@ -87,6 +87,9 @@
                         </div>
                     </form>
                     <!-- End Form-->
+                    <div class="mx-auto mt-4">
+                        <a href="./login.php">¿Ya tengo una cuenta?</a>
+                    </div>
                 </div>
         </div>
         </article>
