@@ -32,7 +32,7 @@
                     Iniciar sesión
                 </div>
 
-                <div class="card-body shadow">
+                <div class="card-body shadow p-4">
 
                     <!-- Start Form-->
                     <form action="validate_login.php" method="post">
@@ -50,8 +50,8 @@
 
                             <input type="hidden" name="hidden" value="1">
 
-                            <div class="col-12 mt-3 ">
-                                <button type="submit" class="btn btn-primary w-50 py-2 fs-5 float-start mt-2">Iniciar
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary w-50 py-2 fs-5 float-end mt-2">Iniciar
                                     sesión</button>
                             </div>
 
@@ -59,7 +59,7 @@
                     </form>
                     <!-- End Form-->
 
-                    <div class="col-12 mt-5">
+                    <div class="col-12 mt-4">
                         <a href="register.php">¿No tengo una cuenta?</a>
                     </div>
             </article>
