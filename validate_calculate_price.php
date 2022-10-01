@@ -43,12 +43,39 @@ $usedSpace = $w1_obj1 + $w1_obj2 +$w1_obj3 + $w2_obj1 + $w2_obj2 + $w2_obj3;
 
 $spaceToRemodel = $freeSpace - $usedSpace;
 
-$finalPrice = $spaceToRemodel * 24;
-
-header("Location: result.php?spaceToRemodel=$spaceToRemodel&price=$finalPrice");
-
+$usdPrice = $spaceToRemodel * 24;
+$usdPrice = number_format($usdPrice,2);
 
 
+// API request
+// get your free API key on https://apilayer.com/marketplace/currency_data-api
+$curl = curl_init();
+$authKey = 'Your API key';
 
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://api.apilayer.com/currency_data/convert?to=COP&from=USD&amount=$usdPrice",
+  CURLOPT_HTTPHEADER => array(
+    "Content-Type: text/plain",
+    "apikey: $authKey"
+  ),
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET"
+));
+
+$response = curl_exec($curl);
+$response = json_decode($response, true); 
+
+$copPrice = $response['result'];
+$copPrice = number_format($copPrice,2,",",".");
+
+curl_close($curl);
+
+
+header("Location: result.php?spaceToRemodel=$spaceToRemodel&usdPrice=$usdPrice&copPrice=$copPrice");
 
 ?>
