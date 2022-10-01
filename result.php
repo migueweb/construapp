@@ -29,4 +29,3 @@ $currentDate = date ( 'd-m-Y' );
 
 </main>
 <?php include_once 'views/footer.php';?>
-<?php session_destroy();?>
