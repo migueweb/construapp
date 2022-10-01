@@ -6,7 +6,7 @@ Web application of a construction company to calculate spaces to be remodeled us
 ## Build with
 - PHP
     - cURL
-- Mysql 
+- MySQL
 - semantic HTML 5
 - Bootstrap 5
 

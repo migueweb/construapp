@@ -10,7 +10,7 @@
     <title>ContruApp</title>
 
     <!-- Bootstrap css-->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="css/bootstrap-icons.css">
 
@@ -56,8 +56,6 @@
             <?php }?>
 
         </div>
-
-
 
     </nav>
     <!-- End navbar -->
